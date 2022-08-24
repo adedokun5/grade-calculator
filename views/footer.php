@@ -1,5 +1,5 @@
 <footer class="bg-dark text-white py-2 fixed-bottom ">
-  <p class="text-center lead">&copy;Copyright A.J.Ayobami 2022</p>
+  <p class="text-center lead">&copy;Copyright Grade Calculator 2022</p>
 </footer>
 <button id="toTopBtn" class="btn btn-success" onclick="backToTopBtn()"><i class="bi bi-arrow-up-square display-5"></i></button>
 <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
