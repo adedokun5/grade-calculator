@@ -17,7 +17,7 @@
 		     <li class="list-item">Enter Their Name.</li>
 		     <li class="list-item">Select Grading System Use By Their Institution.</li>
 		     <li class="list-item">Select Operation To Perform.</li>
-		     <li class="list-item">Enter Number Of Course Offered.( Numbers Only )</li>
+		     <li class="list-item">Enter Number Of Course Offered ( Numbers Only ).</li>
 		     <li class="list-item">Enter Course Code eg abc123.</li>
 		     <li class="list-item">Enter Course Credit Unit ( Numbres Only ).</li>
 		     <li class="list-item">Enter Test Score ( Within the Range of 0 - 40 ).</li>
