@@ -42,7 +42,7 @@
 	} 
 	else 
 	{
-		header("location:$app_url", true, 301 );
+		header("location:$main_url", true, 301 );
 	}
 	
 	include_once 'views/footer.php';

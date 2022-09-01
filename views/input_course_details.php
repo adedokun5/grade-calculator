@@ -1,8 +1,11 @@
 <main class="container py-5">
  <div class="row my-5">
   <div class="text-center mb-3">
-    <a href="home" class="h5">Read User Guide.</a>
-  </div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <strong>Read User's Guide</strong>
+    </button>  
+</div>
   <form action="computed_result" method="POST">
    <table class="table table-bordered">
   	<thead class="text-center">
