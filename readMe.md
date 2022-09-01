@@ -2,7 +2,7 @@
 
 Grade App Calculator Ease students the stress of having to calculate their result
 manually which is prone to error.
-
+//
 Grade App Calculator allows students calculate their:
 *cummulative grade point average (CGPA)
 semmesterial grade point average (SGPA)
@@ -11,6 +11,7 @@ five point grading system
 four point grading system *
 ...
 ...
+//
 User's will be required to perform the following operations :
  Enter Their Name.
  Select Grading System Use By Their Institution.
