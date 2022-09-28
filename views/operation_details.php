@@ -7,14 +7,14 @@
     <div class="form-group ">
      <label for="operation" class="fw-bold">Select Operation to Perform:<span class="text-danger">*</span></label>
      <select class="form-select mt-2" name="operation" id="operation" >
-      <option value="#" onclick="courseFieldStatus()">Select Operation</option>
-      <option value="CGPA" onclick="courseFieldStatus()">Calculate CGPA</option>
-      <option value="SGPA" onclick="courseFieldStatus()">Calculate SGPA</option> 
+      <option value="#" onclick="operationInfoBtn()">Select Operation</option>
+      <option value="CGPA" onclick="operationInfoBtn()">Calculate CGPA</option>
+      <option value="SGPA" onclick="operationInfoBtn()">Calculate SGPA</option> 
      </select>
     </div>
-    <div class="form-group mt-2 mb-3">
+    <div class="form-group mt-3 mb-3">
      <label class="fw-bold" id="instruction" > <span class="text-danger">*</span></label>
-     <input type="hidden" name="num_courses" id="num_courses" required class="form-control" oninput="operationInfoBtn()" placeholder="Enter Number( Greater than zero) of Course Offered">
+     <input type="number" name="num_courses" id="num_courses" required class="form-control" oninput="operationInfoBtn()" placeholder="Enter Number( Greater than zero) of Course Offered">
     </div>
    	<div class="d-flex justify-content-center">
    		<button type="submit" name="operation_btn" id="operation_btn" class="btn btn-light" disabled>Next</button>

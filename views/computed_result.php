@@ -50,14 +50,14 @@
    	 ?>
    	</tbody>
    </table>
-   <div class="d-flex justify-content-between bg-light p-2 fst-italic">
+   <div class="d-flex justify-content-between bg-light p-2 fst-italic result-div">
 
     <div class="h4">
       Total Point Scored : <b> <?= $total_point ?> </b>   <br>
       Total Credit Unit : <b> <?= $total_cre_unit ?></b>
     </div>
 
-    <div>
+    <div class="result">
       <h3 class="fw-bold">
         <?= $selected_operation ?> : <?= result( $total_point, $total_cre_unit ) ?> 
       </h3>
