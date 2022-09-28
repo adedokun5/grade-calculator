@@ -18,3 +18,16 @@ a{
    min-width: 500px;
  }
 }
+
+.result-div
+{
+	min-width: 500px;
+}
+
+.result
+{
+	border: 1px solid green;
+	border-radius: 3px;
+	min-width: 130px;
+	text-align: center;
+}
