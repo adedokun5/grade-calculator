@@ -26,8 +26,6 @@ a{
 
 .result
 {
-	border: 1px solid green;
-	border-radius: 3px;
 	min-width: 130px;
 	text-align: center;
 }

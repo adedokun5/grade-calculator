@@ -6,7 +6,7 @@
 
   if ( isset(  $_SESSION['num_course'] ) ) 
   {
-   $num_course = $_SESSION['num_course'];  	
+    $num_course = $_SESSION['num_course'];  	
   } 
   else 
   {

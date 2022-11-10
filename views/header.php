@@ -11,9 +11,7 @@
 </head>
 <body>
 	<header class="bg-success text-white py-3 fixed-top">
-
 		<h3 class="text-center fw-bold ">Grade Point Calculator</h3>
-		
 	</header>
 </body>
 </html>
