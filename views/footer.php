@@ -1,7 +1,7 @@
 <footer class="bg-dark text-white py-2 fixed-bottom ">
   <p class="text-center lead">&copy;Copyright Grade Calculator <?= date('Y') ?></p>
 </footer>
-<button id="toTopBtn" class="btn btn-success" onclick="backToTopBtn()"><i class="bi bi-arrow-up-square display-5"></i>Top</button>
+<button id="toTopBtn" class="btn btn-success" onclick="backToTopBtn()"><i class="bi bi-arrow-up "></i>Top</button>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -19,7 +19,7 @@
 		      <li class="list-item">Select Operation To Perform.</li>
 		      <li class="list-item">Enter Number Of Course Offered ( Numbers Only ).</li>
 		      <li class="list-item">Enter Course Code eg abc123.</li>
-		      <li class="list-item">Enter Course Credit Unit ( Numbres Only ).</li>
+		      <li class="list-item">Enter Course Credit Unit ( Numbers Only ).</li>
 		      <li class="list-item">Enter Test Score ( Within the Range of 0 - 40 ).</li>
 		      <li class="list-item">Enter Exam Score ( Within the Range of 0 - 60 ).</li>
 		    </ol>

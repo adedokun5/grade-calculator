@@ -30,7 +30,7 @@
         <li class="list-item">Select Operation To Perform.</li>
         <li class="list-item">Enter Number Of Course Offered.( Numbers Only )</li>
         <li class="list-item">Enter Course Code eg abc123.</li>
-        <li class="list-item">Enter Course Credit Unit ( Numbres Only ).</li>
+        <li class="list-item">Enter Course Credit Unit ( Numbers Only ).</li>
         <li class="list-item">Enter Test Score ( Within the Range of 0 - 40 ).</li>
         <li class="list-item">Enter Exam Score ( Within the Range of 0 - 60 ).</li>
       </ol>
