@@ -1,5 +1,5 @@
 <footer class="bg-dark text-white py-2 fixed-bottom ">
-  <p class="text-center lead">&copy;Copyright Grade Calculator <?= date('Y') ?></p>
+  <p class="text-center lead">&copy;Copyright Adedokun Julius Ayobami <?= date('Y') ?></p>
 </footer>
 <button id="toTopBtn" class="btn btn-success" onclick="backToTopBtn()"><i class="bi bi-arrow-up "></i>Top</button>
 
