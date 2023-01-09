@@ -67,7 +67,7 @@
           </h4>
         </div>
       </div>
-      <div class="result d-block d-md-none">
+      <div class="result-small d-block d-md-none">
         <h3 class="fw-bold">
           <?= $selected_operation ?> : <?= result( $total_point, $total_cre_unit ) ?> 
         </h3>

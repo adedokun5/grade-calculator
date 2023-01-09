@@ -5,7 +5,7 @@ a{
 #toTopBtn{
 	position: fixed;
 	left: 85%;
-	bottom: 10%;
+	bottom: 15%;
 	display: none;
 }
 
@@ -22,6 +22,11 @@ a{
 .result-div
 {
 	min-width: 500px;
+}
+
+.result-small{
+	width: 500px;
+	text-align: center;
 }
 
 .result
