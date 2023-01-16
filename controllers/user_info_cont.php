@@ -2,17 +2,18 @@
 	#Author : Adedokun Julius Ayobami
 	#Email : adedokunjuliusayobami@gmail.com
 	#Date Created : 30 July 2022
-	#Date Modified : 23 August 2022
+	#Date Modified : 15 January 2023
 	
-	if ( isset( $_POST['save_user_btn']) ) {
-
+	if ( isset( $_POST['user_btn'] ) ) 
+	{
 		//Getting User Inputs
-		$name = base64_encode( $_POST['name'] );
-		$grd_system = base64_encode( $_POST['grd_system'] );
-
-		//direct to
-		header("location:operation_details?name=$name&grade_system= $grd_system");
-	}
+		$_SESSION['name'] = $_POST['name'];
+	   	$_SESSION['grd_system'] =$_POST['grd_system'];
+	   	$_SESSION['sel_operation'] = $_POST['operation'];
+	   	$_SESSION['num_course'] = $_POST['num_courses'];
+	   	//direct to
+	   	header( "location:compute_result" );
+	} 
 
 	//User Info interface
 	include_once 'views/user_info.php';

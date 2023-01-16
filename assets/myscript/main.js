@@ -1,91 +1,112 @@
+let grading_system = document.querySelector('#grd_system');
+let username = document.querySelector('#name');
+let selected_operation = document.querySelector('#operation');
+let num_courses = document.querySelector('#num_courses');
+let msg = document.querySelector('#user_info_msg');
+let next_btn = document.querySelector('#user_btn');
+
+username.oninput = function () {
+  userInfoNextBtn( grading_system, username, selected_operation, num_courses, msg, next_btn );
+   validateName( username, msg );
+}
+
+grading_system.onchange = function () {
+   userInfoNextBtn( grading_system, username, selected_operation, num_courses, msg, next_btn );
+   validateGradingSystem( grading_system, msg );
+}
+
+selected_operation.onchange = function () {
+   userInfoNextBtn( grading_system, username, selected_operation, num_courses, msg, next_btn );
+   validateOperation( selected_operation, msg );
+}
+
+num_courses.oninput = function () {
+   userInfoNextBtn( grading_system, username, selected_operation, num_courses, msg, next_btn );
+   validateNumberOfCourse( num_courses, msg );
+}
+
+function validateGradingSystem( grd_system, msg ) 
+{
+  if ( grd_system.value == 4 || grd_system.value == 5 ) 
+   {
+    grd_system.style.border = '2px solid green';
+    return 1;
+   }
+   else
+   {
+    msg.innerHTML = 'Please, select a grading system!';
+    grd_system.style.border = '2px solid red';
+    return 0;
+   }
+}
+
+function validateName( name, msg ) 
+{ 
+  if ( name.value.match('[0-9]') || name.value.match('[,.!@#$%^&*()/|]') ) 
+   {
+    msg.innerHTML = 'Name should contain text only!';
+    name.style.border = '2px solid red';
+    return 0;
+   } 
+   else 
+   {
+    name.style.border = '2px solid green';
+    return 1;
+   }
+}
+
+function validateOperation( operation, msg ) 
+{
+  if ( ( operation.value == 'CGPA' || operation.value == 'SGPA' ) && operation.value.length > 0 ) 
+  {
+    operation.style.border = '2px solid green';
+    return 1;
+    } 
+  else 
+  {
+    operation.style.border = '2px solid red';
+    msg.innerHTML = 'Please, select an operation to perform';
+    return 0;
+  }
+  }
+
+function validateNumberOfCourse( num_course, msg ) 
+{
+  if ( num_course.value > 0 && num_course.value < 21 ) 
+  {
+    num_course.style.border = '2px solid green';
+    return 1;
+  } 
+  else 
+  {
+    num_course.style.border = '2px solid red';
+    msg.innerHTML = 'Number of course should be within the range of 1-20!';
+    return 0;
+  }
+}
+
+
+function userInfoNextBtn( system, name, operation, courses, msg, btn ) 
+{ 
+  msg.innerHTML = '';   
+  
+  if ( system.value.length > 0 && operation.value.length > 0 && ( name.value.length > 0 && !( name.value.match('[0-9]') || name.value.match('[,.!@#$%^&*()/|]') )) && ( courses.value.length > 0 && courses.value > 0 && courses.value < 21 ) ) 
+  {
+    btn.disabled = '';
+    btn.style.backgroundColor = 'green';
+    btn.style.color = 'white';
+  }
+  else
+  {
+    btn.disabled = 'disabled';
+    btn.style.backgroundColor = 'red';
+    btn.style.color = 'white';
+  }
+}
 function backToTopBtn() 
 {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
-
-function userInfoNextBtn()
-{
- var current_value = document.getElementById('name').value;
- document.getElementById('user_info_msg').innerHTML = 'Name Field Takes Alphabets Only.';
- if ( current_value.match('[0-9]') || current_value.length <= 0 ) 
- {
-  document.getElementById('save_user_btn').style.color = 'red';
-  document.getElementById('save_user_btn').disabled = 'disabled';
-  document.getElementById('save_user_btn').style.backgroundColor = '';
- }
- else
- {
-  var grading_system = document.getElementById('grd_system').value;
-
-  if ( grading_system == 4 || grading_system == 5 ) 
-  {
-   document.getElementById('save_user_btn').style.color = 'white';
-   document.getElementById('save_user_btn').disabled = '';
-   document.getElementById('save_user_btn').style.backgroundColor = 'green';
-  }
-  else
-  {
-   document.getElementById('save_user_btn').style.color = 'red';
-   document.getElementById('save_user_btn').disabled = 'disabled'; 
-   document.getElementById('save_user_btn').style.backgroundColor = ''; 	
-  }
- }
-}
-
-function operationInfoBtn() 
-{
-  var oprtn = document.getElementById('operation').value; 
-  var num_course = document.getElementById('num_courses').value;
- 
-  if ( oprtn == "CGPA" || oprtn == "SGPA" ) 
-  {
-    if ( oprtn == "CGPA" ) 
-    {
-      document.getElementById('instruction').style.display = "block";
-      document.getElementById('instruction').innerHTML = 
-      "Number of Courses Offered For the Session";
-
-      if ( num_course.match('[a-zA-Z]') || num_course.length <= 0 || num_course < 1 || oprtn == '#' ) 
-      {
-        document.getElementById('operation_btn').style.color = 'red';
-        document.getElementById('operation_btn').disabled = 'disabled';
-        document.getElementById('operation_btn').style.backgroundColor = '';
-      }
-      else
-      {
-        document.getElementById('operation_btn').style.color = 'white';
-        document.getElementById('operation_btn').disabled = '';
-        document.getElementById('operation_btn').style.backgroundColor = 'green';
-      }
-    }
-    else
-    {
-     document.getElementById('instruction').style.display = "block";
-     document.getElementById('instruction').innerHTML = 
-     "Number of Courses Offered For the Semester";
-
-      if ( num_course.match('[a-zA-Z]') || num_course.length <= 0 || num_course < 1 || oprtn == '#' ) 
-      {
-        document.getElementById('operation_btn').style.color = 'red';
-        document.getElementById('operation_btn').disabled = 'disabled';
-        document.getElementById('operation_btn').style.backgroundColor = '';
-      }
-      else
-      {
-        document.getElementById('operation_btn').style.color = 'white';
-        document.getElementById('operation_btn').disabled = '';
-        document.getElementById('operation_btn').style.backgroundColor = 'green';
-      }
-    }
-  }
-  else
-  {
-    document.getElementById('operation_btn').style.color = 'white';
-    document.getElementById('operation_btn').disabled = 'disabled';
-    document.getElementById('operation_btn').style.backgroundColor = 'red';
-    document.getElementById('instruction').innerHTML = " ";
-  }
 }
 
 function computeBtn( total_row ) 
@@ -108,8 +129,8 @@ function computeBtn( total_row )
   	else 
   	{
     	document.getElementById('compute_btn').disabled = 'disabled';
-     	document.getElementById('compute_btn').style.backgroundColor = '';
-     	document.getElementById('compute_btn').style.color = 'red';
+     	document.getElementById('compute_btn').style.backgroundColor = 'red';
+     	document.getElementById('compute_btn').style.color = 'white';
      	break;
   	} 	
  }
