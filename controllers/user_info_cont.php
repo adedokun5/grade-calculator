@@ -2,7 +2,7 @@
 	#Author : Adedokun Julius Ayobami
 	#Email : adedokunjuliusayobami@gmail.com
 	#Date Created : 30 July 2022
-	#Date Modified : 15 January 2023
+	#Date Modified : 06 April 2023
 	
 	if ( isset( $_POST['user_btn'] ) ) 
 	{
@@ -10,7 +10,7 @@
 		$_SESSION['name'] = $_POST['name'];
 	   	$_SESSION['grd_system'] =$_POST['grd_system'];
 	   	$_SESSION['sel_operation'] = $_POST['operation'];
-	   	$_SESSION['num_course'] = $_POST['num_courses'];
+	   	$_SESSION['num_course'] = $_POST['num_course'];
 	   	//direct to
 	   	header( "location:compute_result" );
 	} 
