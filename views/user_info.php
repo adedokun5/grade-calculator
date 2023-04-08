@@ -23,7 +23,7 @@
         <div class="form-group ">
           <label for="operation" class="fw-bold">Select Operation to Perform:<span class="text-danger">*</span></label>
           <select class="form-select mt-2" name="operation" id="operation" >
-            <option value="" >Select Operation</option>
+            <option value="" selected >Select Operation</option>
             <option value="CGPA" >Calculate CGPA</option>
             <option value="SGPA" >Calculate SGPA</option> 
           </select>
@@ -42,4 +42,9 @@
 		
   </div>
 </main>
+<script type="text/javascript">
+  /*window.onload = function () {
+    document.querySelector('#operation').value = '';
+  }*/
+</script>
 <!-- === END SECTION === -->
