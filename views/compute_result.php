@@ -64,7 +64,7 @@
             </h3>
           </div>
 
-          <div >
+          <div>
             <h4 class="text-end">
               <strong><?= $grading_sys ?></strong> Point Grading<br>System
             </h4>
@@ -76,14 +76,13 @@
           </h3>
         </div>
       </section>
-
     <?php
       }
       else
       {
     ?>
       <div class="text-center mb-3">
-        <!-- Button trigger modal -->
+        <!-- User guide modal trigger button -->
         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <strong>Read User's Guide</strong>
         </button>  

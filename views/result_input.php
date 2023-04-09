@@ -3,7 +3,7 @@
     for ($i = 1; $i <= $num_course; $i++) 
     { 
   ?>
-    <section class="row mb-2">
+    <section class="row">
       <span class="col-12 d-inline-block fw-bold"><?= $i ?></span>
       <div class="col-6 col-lg-3 mb-1">
         <label for="course_code<?=$i?>" class="fw-bold">Course Code</label>

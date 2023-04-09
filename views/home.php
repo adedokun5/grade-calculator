@@ -1,7 +1,6 @@
 <!-- === Home Section === -->
 <main class="container" id="home_section">
   <div class="row m-1">
-
     <!--=== About Section ===-->
     <section class="col-md-5 border fw-bold text-muted bg-light rounded ms-md-5">
       <h2 class="text-success text-center text-decoration-underline"><strong>About</strong></h2>
@@ -19,7 +18,7 @@
       </div>
     </section>
     <!--=== End About Section ===-->
-
+    
     <!--=== User Guide Section ===-->
     <section class="col-md-5 border ms-md-5 ps-3 mt-3 mt-md-0 fw-bold bg-light rounded">
       <h2 class="text-success text-center text-decoration-underline"><strong>User Guide</strong></h2>
